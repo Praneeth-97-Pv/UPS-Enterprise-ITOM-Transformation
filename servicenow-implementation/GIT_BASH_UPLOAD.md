@@ -1,4 +1,4 @@
-# Upload code into your existing Git repository using Git Bash
+
 
 Your current repository is `~/Downloads/UPS_ServiceNow_ITOM_Transformation` and contains your documentation. The code ZIP adds a **new** `servicenow-implementation/` directory. Do not run `git init` or clone again.
 
