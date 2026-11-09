@@ -6,7 +6,7 @@ A reference project illustrating how ServiceNow **MID Server**, **Discovery**, *
 
 > **Reference-design disclaimer:** This is a synthetic, educational enterprise architecture using UPS-style logistics scenarios. It is **not** a verified description of UPS production infrastructure, internal integrations, or an actual UPS deployment. Code and configuration samples, where present, should be reviewed, secured, and tested before use.
 
-## 📌 Project objectives
+##  objectives
 
 - Discover approved on-premises and cloud-connected infrastructure through supported discovery methods.
 - Maintain accurate configuration items (CIs) and relationships in the CMDB, using IRE to prevent unintended duplicates.
@@ -16,7 +16,7 @@ A reference project illustrating how ServiceNow **MID Server**, **Discovery**, *
 - Measure coverage, data quality, operational response, and release readiness.
 - Introduce controlled remediation only after authorization, testing, auditability, and rollback safeguards.
 
-## 🏗️ Architecture overview
+##  Architecture overview
 
 ```text
 Approved Infrastructure / Cloud Resources
@@ -48,7 +48,7 @@ Azure Monitor / Network Monitoring        |
 
 **Important architectural distinction:** Discovery runs on approved schedules or changes to maintain CI data. Event Management processes monitoring events independently and continuously; Discovery itself does **not** create incidents.
 
-## 🧩 Core components
+##  Core components
 
 | Component | Responsibility |
 | --- | --- |
@@ -60,13 +60,13 @@ Azure Monitor / Network Monitoring        |
 | **ITSM** | Create or update qualifying incidents, route work to support teams, and track recovery. |
 | **Flow Designer / Runbooks** | Support optional, preapproved, auditable remediation with fallback and verification. |
 
-## 🚚 Illustrative logistics services
+##  Illustrative logistics services
 
 - **Package Tracking:** Tracking API and database dependencies supporting package-status visibility.
 - **Sort Facility Operations:** Warehouse/sorting network infrastructure, gateways, and scanner intake.
 - **Delivery Management:** Related logistics service context for downstream operational impact.
 
-## 🔍 MID Server, Discovery, and CMDB implementation
+##  MID Server, Discovery, and CMDB implementation
 
 | Step | Implementation | Validation |
 | --- | --- | --- |
@@ -90,7 +90,7 @@ Azure Monitor / Network Monitoring        |
 
 **Secondary use case:** A sort-facility network gateway becomes unreachable. The network event is associated with the relevant CI, evaluated for scanner-intake/service impact, and routed to Network Operations or site IT when incident criteria are met.
 
-## 🔐 Security and operational controls
+##  Security and operational controls
 
 - Limit Discovery to **approved targets** and least-privilege credentials.
 - Keep secrets in approved credential-management systems; do not commit credentials, access tokens, or personal data to GitHub.
@@ -99,7 +99,7 @@ Azure Monitor / Network Monitoring        |
 - Review CI ownership and relationship direction before relying on impact analysis.
 - Require change approval, execution audit trails, human fallback, and post-action validation before enabling remediation.
 
-## 📊 Operational measurements
+##  Operational measurements
 
 | Area | Sample measures |
 | --- | --- |
@@ -109,7 +109,7 @@ Azure Monitor / Network Monitoring        |
 | Incident operations | Time to acknowledge/restore, assignment accuracy, SLA risk |
 | Release controls | Change approvals, test evidence, smoke tests, rollback readiness |
 
-## ✅ Acceptance criteria
+##  Acceptance criteria
 
 - [ ] MID Server and Discovery can reach **only approved** targets.
 - [ ] IRE updates existing CIs idempotently rather than creating unintended duplicates.
