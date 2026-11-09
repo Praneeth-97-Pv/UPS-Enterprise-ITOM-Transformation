@@ -1,0 +1,9 @@
+{
+  "name": "servicenow-itom-reference-examples",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Offline tests for synthetic ITOM code samples",
+  "scripts": {
+    "test": "node --test tests/*.test.js"
+  }
+}

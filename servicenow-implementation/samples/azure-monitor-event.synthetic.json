@@ -1,0 +1,10 @@
+{
+  "source": "AzureMonitor",
+  "resourceId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/example-rg/providers/Microsoft.Sql/servers/example-server/databases/tracking",
+  "alertId": "SYNTHETIC-TRACKING-DB-LATENCY-001",
+  "description": "Synthetic tracking database latency threshold exceeded",
+  "severity": "major",
+  "occurredAt": "2026-11-09T10:00:00Z",
+  "metricName": "sql_latency_ms",
+  "metricValue": 850
+}

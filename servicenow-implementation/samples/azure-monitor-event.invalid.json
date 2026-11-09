@@ -1,0 +1,9 @@
+{
+  "source": "Unknown",
+  "resourceId": "not-a-resource",
+  "alertId": "bad id",
+  "description": "",
+  "severity": "urgent",
+  "occurredAt": "not-a-date",
+  "password": "do-not-send"
+}
