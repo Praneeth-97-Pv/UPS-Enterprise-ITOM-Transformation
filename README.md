@@ -133,18 +133,6 @@ The accompanying project documentation is available in [`index.html`](index.html
 
 If the repository includes its corresponding image assets, the HTML references figures under `assets/images/`.
 
-**To view the documentation locally:**
-
-1. Clone or download this repository.
-2. Open `index.html` in a browser.
-3. Use the document sidebar to navigate the sections; the **Print / Save PDF** control provides a print-friendly view.
-
-```bash
-git clone https://github.com/Praneeth-97-Pv/UPS-Enterprise-ITOM-Transformation.git
-cd UPS-Enterprise-ITOM-Transformation
-```
-
-> Configuration files or example scripts in the repository, if any, are references only. Do not assume they are deployable without adapting instance scope, roles, table permissions, integrations, and credentials.
 
 ## 🛠️ Troubleshooting quick reference
 
